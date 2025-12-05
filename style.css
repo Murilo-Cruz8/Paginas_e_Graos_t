@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing:content-box;
+    box-sizing:border-box;
 }
 
 :root{
@@ -18,14 +18,49 @@ body{
 }
 
 header{
-    display: flex;
+    width: 100%;
+   
+}
+
+header>div.container-flex{
+     display: flex;
     align-items: center;
     justify-content: space-between;
 
     height: 165px;
+    
 }
 
 .container-flex{
     width: 85%;
     max-width: 1440px;
+    margin: 0 auto;
+}
+
+#logo{
+    width: 140px;
+}
+
+.links{
+    /* background-color: #D6D1FF; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links a{
+    font-size: 23px;
+    color: var(--preto);
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: #4700CF;
+}
+
+#icone-barras,
+#icone-x,
+#menu_botao{
+    display: none;
+    
 }
